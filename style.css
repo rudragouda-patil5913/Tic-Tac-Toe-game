@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Mukta+Vaani:wght@200&family=Shantell+Sans:wght@300&display=swap");
+
+/* font-family: 'Baloo Bhaina 2', cursive;
+font-family: 'Mukta Vaani', sans-serif;
+font-family: 'Shantell Sans', cursive; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lightblue;
+  text-transform: capitalize;
+}
+nav {
+  background-color: rgb(88, 116, 12);
+  color: white;
+  height: 10vh;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shantell Sans", cursive;
+  margin-bottom: 50px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 8vw);
+  grid-template-columns: repeat(3, 25vh);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.box {
+  border: 1px solid black;
+  font-size: 10vw;
+  cursor: pointer;
+  /* text-align: center;
+  padding: 3vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box:hover {
+  background: #7776ca;
+}
+
+.gameInfo {
+  font-family: "Baloo Bhaina 2", cursive;
+  padding: 0 34px;
+}
+
+.imgbox img {
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+
+#reset {
+  margin: 0 23px;
+  padding: 3px 30px;
+  font-family: "Baloo Bhaina 2", cursive;
+  background-color: rgb(88, 116, 12);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    width: 100vw;
+  }
+
+  .gameContainer {
+    flex-wrap: wrap;
+  }
+  .container {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 8vw);
+    grid-template-columns: repeat(3, 15vh);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .box {
+    font-size: 6vw;
+  }
+  .gameInfo {
+    margin: 34px;
+  }
+}
